@@ -10,3 +10,5 @@ group:
 <code src="./debounce.tsx" />
 
 ### 节流
+
+<code src="./throttle.tsx" />
