@@ -2,7 +2,7 @@
 group:
   title: 工具函数
   group: 工具函数
-  path: /abc
+  path: /tools
 ---
 
 ### 防抖
