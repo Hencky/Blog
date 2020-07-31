@@ -48,9 +48,7 @@ const Container: React.FC<ContainerProps> = props => {
     <div
       ref={drop}
       style={{ ...style, border: isOver ? '1px solid #f08' : '' }}
-    >
-      Container
-    </div>
+    />
   );
 };
 
