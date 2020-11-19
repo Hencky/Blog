@@ -1,0 +1,47 @@
+.component-line-wrapper {
+  position: relative;
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  &-item {
+    display: flex;
+    &-line {
+      width: 40px;
+      position: relative;
+      > div {
+        position: absolute;
+        background-color: #ccc;
+      }
+
+      &-left {
+        width: 40px;
+        height: 1px;
+        top: 50%;
+      }
+
+      &-top {
+        width: 1px;
+        height: 50%;
+      }
+
+      &-bottom {
+        width: 1px;
+        height: 50%;
+        top: 50%;
+      }
+    }
+  }
+}
