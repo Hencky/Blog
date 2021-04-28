@@ -58,7 +58,6 @@ const Revoke: React.FC = () => {
 
           unDoList.push(u);
           reDoList.push(r);
-          console.log('xxx', reDoList, unDoList, idx);
         },
       );
 
@@ -90,8 +89,6 @@ const Revoke: React.FC = () => {
 
     setObj(unDoObj);
     setValue(unDoObj);
-
-    console.log('xxx', reDoList, unDoList, idx);
   };
 
   const reDo = () => {
@@ -104,9 +101,9 @@ const Revoke: React.FC = () => {
 
     setObj(reDoObj);
     setValue(reDoObj);
-
-    console.log('xxx', reDoList, unDoList, idx);
   };
+
+  console.log(reDoList.length, idx);
 
   return (
     <div>
@@ -139,7 +136,7 @@ const Revoke: React.FC = () => {
       </Space>
 
       {idx > -1 ? <Button onClick={unDo}>UnDo</Button> : null}
-      {true ? <Button onClick={reDo}>Redo</Button> : null}
+      {reDoList.length !== idx + 1 ? <Button onClick={reDo}>Redo</Button> : null}
     </div>
   );
 };
