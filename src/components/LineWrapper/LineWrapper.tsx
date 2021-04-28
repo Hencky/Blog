@@ -16,7 +16,7 @@ interface LineProps {
   gutter?: number;
 }
 
-const LineItem: React.FC<LineItemProps> = (props) => {
+const LineItem: React.FC<LineItemProps> = props => {
   const { children, length, gutter = 0, index, ...restProps } = props;
 
   if (length <= 1) {
@@ -42,7 +42,7 @@ const LineItem: React.FC<LineItemProps> = (props) => {
   );
 };
 
-const LineWrapper: React.FC<LineProps> = (props) => {
+const LineWrapper: React.FC<LineProps> = props => {
   const { children, title, gutter } = props;
 
   const renderLineItem = React.useCallback(() => {

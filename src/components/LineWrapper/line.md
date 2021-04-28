@@ -5,6 +5,4 @@ group:
   path: /component/line-wrapper
 ---
 
-
-<code src="./line-wrapper/index.tsx" />
-
+<code src="./index.tsx" />

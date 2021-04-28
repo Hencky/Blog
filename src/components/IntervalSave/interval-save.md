@@ -5,6 +5,4 @@ group:
   path: /component/interval-save
 ---
 
-
-<code src="./interval-save/index.tsx" />
-
+<code src="./index.tsx" />

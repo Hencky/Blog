@@ -44,12 +44,7 @@ const Container: React.FC<ContainerProps> = props => {
   });
 
   // ref绑定drop
-  return (
-    <div
-      ref={drop}
-      style={{ ...style, border: isOver ? '1px solid #f08' : '' }}
-    />
-  );
+  return <div ref={drop} style={{ ...style, border: isOver ? '1px solid #f08' : '' }} />;
 };
 
 export default Container;
